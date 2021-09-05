@@ -5,7 +5,7 @@ import seaborn as sns
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
-iris_df = pd.read_csv("C:/Users/MBajw/OneDrive/Documents/Coding/iris-species.csv")
+iris_df = pd.read_csv("iris-species.csv")
 
 iris_df['Label'] = iris_df['Species'].map({'Iris-setosa': 0, 'Iris-virginica': 1, 'Iris-versicolor':2})
 
